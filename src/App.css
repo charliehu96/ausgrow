@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: light;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+	font-weight: 200;
+	font-style: thin;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: medium;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.landing-container {
+	background-image: url("assets/img/cattle-stock-1.jpg");
 }

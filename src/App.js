@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import SearchBar from "./components/SearchBar/SearchBar";
+import LandingPage from "./components/LandingPage/LandingPage";
+import PhotoGrid from "./components/PhotoGrid/PhotoGrid";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="landing-container bg-cover bg-center bg-no-repeat">
+				<Header />
+				<SearchBar />
+				<LandingPage />
+			</div>
+			{/* Further components */}
+			<PhotoGrid />
+		</div>
+	);
 }
 
 export default App;
