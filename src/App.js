@@ -5,6 +5,8 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import LandingPage from "./components/LandingPage/LandingPage";
 import ImageGrid from "./components/ImageGrid/ImageGrid";
 import MapComponent from "./components/MapComponent/MapComponent";
+import Footer from "./components/Footer/Footer";
+import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 
 function App() {
 	return (
@@ -15,9 +17,12 @@ function App() {
 			</div>
 			<div className="p-8 m-8">
 				<ImageGrid />
-				<MapComponent />
 			</div>
-			<LandingPage />
+			<div className="px-16 py-1 bg-gray-50">
+				<MapComponent />
+				<Footer />
+			</div>
+			{/* <BackgroundVideo /> */}
 		</div>
 	);
 }

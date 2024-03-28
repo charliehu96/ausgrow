@@ -1,12 +1,9 @@
-// src/LandingPage.js
 import React from "react";
 
 function LandingPage() {
 	return (
 		<div>
-			<h1>Welcome to My Landing Page</h1>
-			<p>This is a basic landing page created with React.</p>
-			<div style={{ height: "1200px" }}></div>
+			<div style={{ height: "300px" }}></div>
 			<div>
 				<p className="tracking-tight">
 					This text has tight letter-spacing.
