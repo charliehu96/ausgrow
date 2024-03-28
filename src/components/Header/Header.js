@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import HamburgerMenu from "./HamburgerMenu";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -20,7 +21,7 @@ function Header() {
 
 	return (
 		<header
-			className={`header flex justify-between items-center ${
+			className={`header top-0 z-10 flex justify-between items-center ${
 				isScrolled && "scrolled"
 			}`}
 		>
@@ -28,20 +29,15 @@ function Header() {
 				<div className="p-8">
 					<HamburgerMenu />
 				</div>
-				<div className="title">
-					<span>Aus</span>
-					<span className="title-bold">Grow</span>
+				<div className="title tracking-wider">
+					{/* <span>Aus</span>
+					<span className="title-bold">Grow</span> */}
 					<span className="pl-4">Digital</span>
 					<span className="title-bold">Farming</span>
 				</div>
 			</div>
-			<div className="flex flex-1 justify-end buttons md:hidden">
-				<button className="bg-black hover:bg-gray-700 text-white font-semibold py-3 px-6 m-3 border border-gray-400 rounded-full shadow">
-					Login
-				</button>
-				<button className="bg-white hover:bg-gray-100 text-black font-semibold p-3 m-3 border border-blue-700 rounded-full shadow">
-					Sign Up
-				</button>
+			<div className="flex flex-1 justify-end buttons hidden md:flex">
+				<SocialIcons />
 			</div>
 		</header>
 	);
