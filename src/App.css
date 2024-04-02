@@ -50,6 +50,7 @@ body {
 
 .landing-container {
 	background-image: url("assets/images/cattle-stock-1.jpg");
+	/* background-image: url("assets/images/cattle-dalle-1.tiff"); */
 	height: 100vh;
 }
 

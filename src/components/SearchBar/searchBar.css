@@ -28,3 +28,37 @@ a {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+		filter: blur(4px);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+.slide-in-left {
+	animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+		filter: blur(4px);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+.slide-in-right {
+	animation: slideInRight 1s ease-out forwards;
+}

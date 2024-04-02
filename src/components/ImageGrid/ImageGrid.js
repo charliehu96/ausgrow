@@ -1,6 +1,6 @@
 import React from "react";
 import "./imagegrid.css";
-// Importing images directly in the component
+import ImageItem from "./ImageItem";
 import image1 from "../../assets/images/image-grid-1.jpg";
 import image2 from "../../assets/images/image-grid-2.jpg";
 import image3 from "../../assets/images/image-grid-3.jpg";
@@ -51,18 +51,7 @@ const ImageGrid = () => {
 	return (
 		<div className="grid md:grid-cols-3 grid-cols-1 gap-x-8 gap-y-4">
 			{items.map((item, index) => (
-				<div key={index} className="space-y-2 p-4">
-					<img src={item.image} alt={item.title} className="w-full" />
-					<h3 className="image-grid-title tracking-wider text-center md:text-left">
-						{item.title}
-					</h3>
-					<a
-						className="link-text custom-hover block text-center md:text-left"
-						href={item.link}
-					>
-						{item.linkText}
-					</a>
-				</div>
+				<ImageItem key={index} {...item} />
 			))}
 		</div>
 	);

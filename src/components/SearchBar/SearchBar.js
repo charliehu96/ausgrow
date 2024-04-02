@@ -1,16 +1,32 @@
 import React from "react";
 import MagnifyingGlass from "./MagnifyingGlass";
 import MapPin from "./MapPin";
+import { useInView } from "react-intersection-observer";
 
 function SearchBar() {
+	const { ref, inView } = useInView({
+		threshold: 0.5, // Trigger inView true when the element is fully in viewport (0-1)
+		triggerOnce: false,
+	});
+
 	return (
 		<div className="container mx-auto flex">
 			{/* Container with responsive classes */}
-			<div className="md:absolute md:top-1/2 transform md:-translate-y-1/2 flex-1 m-4 md:p-4">
-				<p className="tag-line mt-10 md:mt-0">
+			<div
+				ref={ref}
+				className="md:absolute md:top-1/2 transform md:-translate-y-1/2 flex-1 m-4 md:p-4"
+			>
+				<p
+					className={`tag-line mt-10 md:mt-0
+				${inView ? "slide-in-left" : "opacity-0"}
+				`}
+				>
 					Comprehensive solutions for the cattle industry
 				</p>
-				<div className="md:grid md:grid-cols-12">
+				<div
+					className={`md:grid md:grid-cols-12 				
+					${inView ? "slide-in-right" : "opacity-0"}`}
+				>
 					<div className="relative md:col-span-4">
 						{/* Input box */}
 						<input
@@ -36,7 +52,11 @@ function SearchBar() {
 					</button>
 				</div>
 				<div className="hidden md:block md:w-full md:flex">
-					<span className="sign-in">
+					<span
+						className={`sign-in ${
+							inView ? "slide-in-right" : "hidden"
+						}`}
+					>
 						Or{" "}
 						<a
 							className="hover:text-white duration-150 ease-in-out"
