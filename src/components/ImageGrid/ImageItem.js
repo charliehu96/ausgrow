@@ -2,7 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 
 const ImageItem = ({ image, title, link, linkText }) => {
-	const { ref, inView, entry } = useInView({
+	const { ref, inView } = useInView({
 		threshold: 0.8,
 		triggerOnce: true,
 	});
@@ -23,7 +23,7 @@ const ImageItem = ({ image, title, link, linkText }) => {
 				inView ? "slide-in-bottom" : "opacity-0"
 			}`}
 		>
-			<img src={image} alt={title} className="w-full" />
+			<img src={image} alt={title} className="w-full h-80 object-cover" />
 			<h3 className="image-grid-title tracking-wider text-center md:text-left">
 				{title}
 			</h3>

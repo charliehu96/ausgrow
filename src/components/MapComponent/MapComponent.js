@@ -58,58 +58,58 @@ function MapComponent() {
 			<div className="map">
 				<AustraliaMap />
 			</div>
-			<div className="grid md:grid-cols-3 grid-cols-2 gap-x-8 gap-y-8 my-8 jusify-center">
+			<div className="grid md:grid-cols-3 grid-cols-2 gap-8 my-8 jusify-center">
 				<a
 					href="www.example.com"
-					className="text-center custom-hover text-sm md:text-lg"
+					className="text-left custom-hover text-sm md:text-lg"
 				>
 					National Cattle Number
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					New South Wales
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					Queensland
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					Victoria
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					Western Australia
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					Nothern Territory
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					Tasmania
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					South Australia
 				</a>
 				<a
 					href="www.example.com"
-					className="text-center custom-hover  text-sm md:text-lg"
+					className="text-left custom-hover  text-sm md:text-lg"
 				>
 					New Zealand
 				</a>

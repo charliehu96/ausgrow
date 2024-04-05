@@ -7,12 +7,12 @@ const Footer = () => {
 			{/* Thin line */}
 			<hr className="border-t border-gray-400 mb-8" />
 
-			<div className="py-4 flex justify-between">
-				<div className="text-2xl">
+			<div className="py-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div className="text-2xl col-span-1">
 					<span>Digital</span>
 					<span className="font-bold">Farming</span>
 				</div>
-				<div className="grid grid-cols-2 gap-4 md:gap-x-20 md:gap-y-10 md:mr-20 md:pr-20">
+				<div className="col-span-2 grid grid-cols-2 gap-8">
 					<a
 						href="www.example.com"
 						className="hover:text-blue-500 text-xs md:text-base"
@@ -96,7 +96,7 @@ const Footer = () => {
 					<SocialIcons />
 				</div>
 				<div className="flex justify-between">
-					<p className="text-xs md:text-sm">Privacy policy</p>
+					<p className="text-xs md:text-sm">Privacy Policy</p>
 					<p className="text-xs md:text-sm mx-4">Terms of Service</p>
 					<p className="text-xs md:text-sm">Copyright © NextGen</p>
 				</div>

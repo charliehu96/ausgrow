@@ -21,7 +21,7 @@ function SearchBar() {
 				${inView ? "slide-in-left" : "opacity-0"}
 				`}
 				>
-					Comprehensive solutions for the cattle industry
+					Integration of beef cattle supply chain
 				</p>
 				<div
 					className={`md:grid md:grid-cols-12 				
