@@ -58,7 +58,7 @@ function MapComponent() {
 			<div className="map">
 				<AustraliaMap />
 			</div>
-			<div className="grid md:grid-cols-3 grid-cols-2 gap-8 my-8 jusify-center">
+			<div className="grid md:grid-cols-3 grid-cols-2 gap-8 gap-x-32 my-8 jusify-center">
 				<a
 					href="www.example.com"
 					className="text-left custom-hover text-sm md:text-lg"

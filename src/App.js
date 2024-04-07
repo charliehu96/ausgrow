@@ -9,8 +9,8 @@ import Footer from "./components/Footer/Footer";
 function App() {
 	return (
 		<div className="App">
-			<div className="landing-container bg-cover bg-center">
-				<Header />
+			<Header />
+			<div>
 				<SearchBar />
 			</div>
 			<div className="p-6 m-6">

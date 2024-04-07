@@ -1,8 +1,10 @@
 .header {
 	background-color: transparent;
 	transition: background-color 0.3s ease; /* Smooth transition for background color change */
-	position: sticky;
+	position: fixed;
+	left: 0;
 	top: 0;
+	right: 0;
 	z-index: 10;
 }
 

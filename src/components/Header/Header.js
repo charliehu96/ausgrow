@@ -21,7 +21,7 @@ function Header() {
 
 	return (
 		<header
-			className={`header top-0 z-10 flex justify-between items-center ${
+			className={`header fixed top-0 z-10 flex justify-between items-center ${
 				isScrolled && "scrolled"
 			}`}
 		>
