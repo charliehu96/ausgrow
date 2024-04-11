@@ -1,27 +1,24 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import SearchBar from "./components/SearchBar/SearchBar";
-import ImageGrid from "./components/ImageGrid/ImageGrid";
-import MapComponent from "./components/MapComponent/MapComponent";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import AboutPage from "./components/AboutPage/AboutPage";
+import SolutionsPage from "./components/SolutionsPage/SolutionsPage";
+import StarlinkPage from "./components/StarlinkPage/StarlinkPage";
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
+		<Router>
 			<div>
-				<SearchBar />
+				{/* App-level components like navigation */}
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/about" element={<AboutPage />} />
+					<Route path="/solutions" element={<SolutionsPage />} />
+					<Route path="/starlink" element={<StarlinkPage />} />
+				</Routes>
 			</div>
-			<div className="p-6 m-6">
-				<ImageGrid />
-			</div>
-			<div className="px-16 py-1 bg-gray-50">
-				<MapComponent />
-				<Footer />
-			</div>
-			{/* <BackgroundVideo /> */}
-		</div>
+		</Router>
 	);
 }
 

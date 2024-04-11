@@ -1,9 +1,10 @@
 import React from "react";
 import SocialIcons from "../SocialIcons/SocialIcons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<footer className="m-4">
+		<footer className="m-1">
 			{/* Thin line */}
 			<hr className="border-t border-gray-400 mb-8" />
 
@@ -15,73 +16,73 @@ const Footer = () => {
 				<div className="col-span-2 grid grid-cols-2 gap-8 gap-x-32 ">
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Home
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Contact us
 					</a>
-					<a
-						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+					<Link
+						to="/about"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						About us
-					</a>
+					</Link>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Privacy policy
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Our solutions
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Terms of service
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Starlink trackers
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Copyright
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Your Dashboard
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Sign up
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Sitemap
 					</a>
 					<a
 						href="www.example.com"
-						className="hover:text-blue-500 text-xs md:text-base"
+						className="hover:text-blue-500 text-xs text-black md:text-base"
 					>
 						Log in
 					</a>
@@ -99,9 +100,11 @@ const Footer = () => {
 					<p className="text-xs md:text-sm mx-2">Privacy Policy</p>
 					<p className="text-xs md:text-sm mx-2">Terms of Service</p>
 					<p className="text-xs md:text-sm mx-2">
-						Copyright © NextGen
+						Copyright © NextGen Digital Applications Pty Ltd
 					</p>
-					<p className="text-xs md:text-sm ml-2">ABN:19675197270</p>
+					<p className="text-xs md:text-sm ml-2">
+						ABN:19 675 197 270
+					</p>
 				</div>
 			</div>
 		</footer>

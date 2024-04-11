@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import MagnifyingGlass from "./MagnifyingGlass";
 import MapPin from "./MapPin";
 import { useInView } from "react-intersection-observer";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { RiAccountCircleLine } from "react-icons/ri";
 import image1 from "../../assets/images/cattle-background-1.jpg";
 import image2 from "../../assets/images/cattle-background-2.jpg";
 import image3 from "../../assets/images/cattle-background-3.jpg";
@@ -41,11 +42,8 @@ function SearchBar() {
 				height: "100vh",
 			}}
 		>
-			<div className="container mx-auto flex">
-				<div
-					ref={ref}
-					className="md:absolute md:top-1/2 transform md:-translate-y-1/2 flex-1 m-4 md:p-4"
-				>
+			<div className="pl-4 flex m-4 md:p-8 md:absolute md:top-1/2  ">
+				<div ref={ref} className="w-full flex-1 ">
 					<p
 						className={`tag-line mt-10 md:mt-0
 				${inView ? "slide-in-left" : "opacity-0"}
@@ -54,10 +52,10 @@ function SearchBar() {
 						{titleText[index]}
 					</p>
 					<div
-						className={`md:grid md:grid-cols-12 				
+						className={`md:grid md:grid-cols-12 gap-x-4 				
 					${inView ? "slide-in-right" : "opacity-0"}`}
 					>
-						<div className="relative md:col-span-4">
+						<div className="relative md:col-span-6">
 							{/* Input box */}
 							<input
 								id="search-box"
@@ -65,19 +63,20 @@ function SearchBar() {
 								placeholder="Search..."
 								className="w-full h-full p-4 border border-gray-800 placeholder-gray-500 text-gray-900 focus:outline-none"
 							/>
-							{/* Magnifying glass icon */}
 							<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none h-full overflow-hidden">
-								<MagnifyingGlass className="h-full w-full text-gray-400" />
+								{/* <MagnifyingGlass className="h-full w-full text-gray-400" /> */}
+								<MapPin className="h-full w-full" />
 							</div>
 						</div>
-						<button className="w-full md:w-auto md:col-span-2 flex items-center justify-center bg-black hover:bg-gray-700 text-white font-semibold p-4 shadow md:mr-8 my-4 md:my-0">
-							<MapPin className="flex h-5 w-5 text-gray-400" />
-							<span className="ml-2">Tracking</span>
+						<button className="w-full md:w-auto md:col-span-2 flex items-center justify-center bg-white border-gray-200 hover:bg-gray-300 text-black font-semibold p-4 shadow my-4 md:my-0">
+							<FaMagnifyingGlass className="h-6 w-6" />
+							<span className="pl-4">Tracking</span>
 						</button>
-						<button className="col-span-1 bg-gray-300 bg-white hover:bg-gray-300 text-black font-semibold p-4 px-8 border border-gray-200 rounded-full shadow">
+						<button className="col-span-1 flex items-center justify-center bg-black hover:bg-gray-700 text-white font-semibold p-4 border border-gray-800 rounded-xl shadow">
+							<RiAccountCircleLine className="h-6 w-6 mr-1" />
 							Sign Up
 						</button>
-						<button className="md:hidden col-span-1 bg-black hover:bg-gray-800 text-white font-semibold p-4 px-8 border border-gray-200 rounded-full shadow ml-4">
+						<button className="md:hidden col-span-1 bg-black hover:bg-gray-800 text-white font-semibold p-4 px-8 border border-gray-200 rounded-xl shadow ml-4">
 							Sign In
 						</button>
 					</div>
@@ -89,7 +88,7 @@ function SearchBar() {
 						>
 							Or{" "}
 							<a
-								className="hover:text-white duration-150 ease-in-out"
+								className="hover:text-gray-600 duration-150 ease-in-out"
 								href="http://example.com"
 							>
 								Sign In

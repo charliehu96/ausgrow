@@ -1,12 +1,12 @@
 import {
-	FaFacebook,
-	FaTwitter,
-	FaYoutube,
+	FaFacebookSquare,
+	FaTwitterSquare,
+	FaWhatsappSquare,
 	FaWeixin,
-	FaWeibo,
-	FaQq,
-	FaWhatsapp,
 } from "react-icons/fa";
+import { TbBrandYoutubeFilled } from "react-icons/tb";
+import { AiFillWeiboSquare, AiFillQqSquare } from "react-icons/ai";
+// import { ReactComponent as WechatIcon } from "../../assets/svg/wechat-tile.svg";
 
 function SocialMediaIcons() {
 	return (
@@ -15,57 +15,58 @@ function SocialMediaIcons() {
 				href="https://facebook.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-blue-500"
+				className="hover:text-blue-500 text-gray-600"
 			>
-				<FaFacebook className="text-xl" />
+				<FaFacebookSquare className="text-2xl" />
 			</a>
 			<a
 				href="https://twitter.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-blue-300"
+				className="hover:text-blue-300 text-gray-600"
 			>
-				<FaTwitter className="text-xl" />
+				<FaTwitterSquare className="text-2xl" />
 			</a>
 			<a
 				href="https://youtube.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-red-500"
+				className="hover:text-red-500 text-gray-600"
 			>
-				<FaYoutube className="text-xl" />
+				<TbBrandYoutubeFilled className="text-2xl" />
 			</a>
 			<a
 				href="https://whatsapp.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-green-600"
+				className="hover:text-green-600 text-gray-600"
 			>
-				<FaWhatsapp className="text-xl" />
+				<FaWhatsappSquare className="text-2xl" />
 			</a>
 			<a
 				href="https://weibo.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-red-400"
+				className="hover:text-red-400 text-gray-600"
 			>
-				<FaWeibo className="text-xl" />
+				<AiFillWeiboSquare className="text-2xl" />
 			</a>
 			<a
 				href="https://qq.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-black"
+				className="hover:text-black text-gray-600
+"
 			>
-				<FaQq className="text-xl" />
+				<AiFillQqSquare className="text-2xl" />
 			</a>
 			<a
 				href="https://weixin.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="hover:text-green-400"
+				className="hover:text-green-400  text-gray-600"
 			>
-				<FaWeixin className="text-xl" />
+				<FaWeixin className="text-2xl" />
 			</a>
 		</div>
 	);

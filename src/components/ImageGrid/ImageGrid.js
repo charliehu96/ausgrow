@@ -24,7 +24,7 @@ const ImageGrid = () => {
 		},
 		{
 			image: image3,
-			title: "Feedlot",
+			title: "Cattle Feedlot",
 			link: "#link3",
 			linkText: "Operator sign up",
 		},

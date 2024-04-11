@@ -19,16 +19,9 @@ function AustraliaMap() {
 			view: new View({
 				center: [14800000, -3200000], // Center coordinates of Australia
 				zoom: 4, // Initial zoom level
-				interactions: defaultInteractions({
-					doubleClickZoom: false,
-					dragAndDrop: false,
-					dragPan: false,
-					keyboardPan: false,
-					keyboardZoom: false,
-					mouseWheelZoom: false,
-					pointer: false,
-					select: false,
-				}),
+			}),
+			interactions: defaultInteractions({
+				mouseWheelZoom: false,
 			}),
 		});
 
@@ -43,7 +36,7 @@ function AustraliaMap() {
 
 function MapComponent() {
 	return (
-		<div className="flex flex-col p-4 mt-8">
+		<div className="flex flex-col p-1 mb-2 mt-8">
 			<div className="flex justify-between items-center mb-4">
 				<h2 className="text-2xl md:text-4xl font-bold text-tracking-wider mb-2">
 					National Cattle Herd
