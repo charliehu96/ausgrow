@@ -12,13 +12,13 @@ const ImageGrid = () => {
 	const items = [
 		{
 			image: image1,
-			title: "Cattle Farm",
+			title: "Cattle Farming",
 			link: "#link1",
 			linkText: "Join the network",
 		},
 		{
 			image: image2,
-			title: "Auction Yard",
+			title: "Cattle Sell Yard",
 			link: "#link2",
 			linkText: "Agency sign up",
 		},
@@ -30,19 +30,19 @@ const ImageGrid = () => {
 		},
 		{
 			image: image4,
-			title: "Abattoir",
+			title: "Beef Abattoir",
 			link: "#link4",
 			linkText: "Processor sign up",
 		},
 		{
 			image: image5,
-			title: "Exporter",
+			title: "Beef Exporter",
 			link: "#link5",
 			linkText: "Merchant sign up",
 		},
 		{
 			image: image6,
-			title: "Distributor",
+			title: "Beef Distributor",
 			link: "#link6",
 			linkText: "Become a partner",
 		},

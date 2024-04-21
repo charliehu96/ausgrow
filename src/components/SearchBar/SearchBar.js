@@ -4,8 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { RiAccountCircleLine } from "react-icons/ri";
 import image1 from "../../assets/images/cattle-background-1.jpg";
-import image2 from "../../assets/images/cattle-background-2.jpg";
-import image3 from "../../assets/images/cattle-background-3.jpg";
 
 function SearchBar() {
 	const titleText = [
@@ -13,8 +11,6 @@ function SearchBar() {
 		"Starlink livestock tracking system",
 		"Grand Cattle Fund",
 	];
-
-	const backgroundImages = [image1, image2, image3];
 
 	const { ref, inView } = useInView({
 		threshold: 0.5, // Trigger inView true when the element is fully in viewport (0-1)
@@ -25,21 +21,19 @@ function SearchBar() {
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
-			setIndex(
-				(currentIndex) => (currentIndex + 1) % backgroundImages.length
-			);
+			setIndex((currentIndex) => (currentIndex + 1) % titleText.length);
 		}, 5000);
 
 		return () => clearInterval(intervalId);
-	}, [backgroundImages.length]);
+	}, [titleText.length]);
 
 	return (
 		<div
 			className="landing-container bg-cover bg-center"
 			style={{
-				backgroundImage: `url(${backgroundImages[index]})`,
 				backgroundSize: "cover",
 				height: "100vh",
+				backgroundImage: `url(${image1})`,
 			}}
 		>
 			<div className="pl-4 flex m-4 md:p-8 md:absolute md:top-1/2  ">
@@ -55,7 +49,7 @@ function SearchBar() {
 						className={`md:grid md:grid-cols-12 gap-x-4 				
 					${inView ? "slide-in-right" : "opacity-0"}`}
 					>
-						<div className="relative md:col-span-6">
+						<div className="relative md:col-span-5 search-container">
 							{/* Input box */}
 							<input
 								id="search-box"

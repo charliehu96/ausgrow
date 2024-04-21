@@ -45,13 +45,13 @@ function MapComponent() {
 					href="https://example.com"
 					className="custom-hover md:text-xl text-right md:text-left"
 				>
-					View history report
+					Livestock Management
 				</a>
 			</div>
 			<div className="map">
 				<AustraliaMap />
 			</div>
-			<div className="grid md:grid-cols-3 grid-cols-2 gap-8 gap-x-32 my-8 jusify-center">
+			<div className="grid md:grid-cols-3 grid-cols-2 gap-8 gap-x-16 my-8 jusify-center">
 				<a
 					href="www.example.com"
 					className="text-left custom-hover text-sm md:text-lg"
